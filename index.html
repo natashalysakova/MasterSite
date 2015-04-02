@@ -15,12 +15,13 @@
     <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/agency.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Comfortaa&subset=cyrillic-ext,latin' rel='stylesheet' type='text/css'>
 
+    <link href="css/flags.css" rel="stylesheet" type="text/css">
+    <link href="css/agency.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,45 +30,20 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+
 </head>
 
 <body id="page-top" class="index">
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <a class="page-scroll" href="#page-top"><img class="logo navbar-brand" style="margin-left: -25px;" src="img/donntu.png" /></a></a>
-            </div>
+        <div class="container" id="navbar">
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li><a href="#resume" class="page-scroll">Резюме</a></li>
-                    <li> <a href="#biography" class="page-scroll"> Биография</a></li>
-                    <li> <a href="#referat" class="page-scroll"> Реферат</a></li>
-                    <li> <a href="#library" class="page-scroll"> Библиотека</a></li>
-                    <li> <a href="#links" class="page-scroll"> Ссылки</a></li>
-                    <li> <a href="#report" class="page-scroll"> Отчет о поиске</a></li>
-                    <li> <a href="#individual" class="page-scroll"> Индивидуальный раздел</a></li>
-
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
     </nav>
+
+
 
     <!-- Header -->
     <header id="landing-content">
@@ -76,225 +52,28 @@
                 <!--<div class="intro-lead-in">Welcome To Our Studio!</div>-->
                 <!--<div class="intro-heading">It's Nice To Meet You</div>-->
                 <!--<a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>-->
+
             </div>
             <img  src="img/mnu.png" height="320px">
+        </div>
+        <div id="languages">
+            <div class="btn" onclick="switchLanguage('ru');"><img src="img/blank.gif" class="flag flag-ru" alt="Русский" /></div>
+            <div class="btn" onclick="switchLanguage('ua');"><img src="img/blank.gif" class="flag flag-ua" alt="Українська" /></div>
+            <div class="btn" onclick="switchLanguage('en');"><img src="img/blank.gif" class="flag flag-us" alt="English" /></div>
         </div>
     </header>
 
     <!-- Services Section -->
-    <section id="resume">
-        <div class="container" >
-            <div class="row center-block text-center">
-                <p><h1>Лысакова Наталья Владимировна</h1></p>
-                </div>
-            <div class="row col-md-8 col-md-offset-2 text-center  text-muted">
-                    <p>Факультет компьютерных наук и технологий</br>
-                        Кафедра прикладной математики и информатики</br>
-                        Специальность "Программное обеспечение систем"</p>
-            </div>
-                <div class="row col-md-8 col-md-offset-2 text-center">
-                    <h3>Разработка и анализ алгоритмов двумерного динамического программирования</h3>
-                    Научный руководитель доц. Маслова Наталья Александровна</p>
-
-            </div>
-        </div>
-        <br>
-        <div class="container" >
-            <div class="col-md-8 col-md-offset-2">
-                <table class="table table-responsive">
-                    <tr>
-                        <th class="col-md-4">ФИО</th>
-                        <td>Лысакова Наталья Владимировна</td>
-                    </tr>
-                    <tr>
-                        <th>Дата рождения</th>
-                        <td>22 августа 1992г.</td>
-                    </tr>
-                    <tr>
-                        <th>Место рождения</th>
-                        <td>г. Донецк</td>
-                    </tr>
-                    <tr>
-                        <th>Школа</th>
-                        <td>Среднеобразовательная школа №98 г. Донецк</td>
-                    </tr>
-                    <tr>
-                        <th>ВУЗ</th>
-                        <td><strong>Бакалаврат:</strong> <br>
-                            2010–2011 гг. — Государственный университет информатики и искусственного интеллекта, факультет: «Компьютерных информационных технологий», специальность: «Программное обеспечение интеллектуальных систем».<br>
-                            2011–2014 гг. — ГВУЗ «Донецкий национальный технический университет», факультет: «Компьютерных наук и технологий», специальность: «Программное обеспечение систем».<br>
-
-                            <strong>Магистратура:</strong><br>
-                            2014–2016 гг. — ГВУЗ «Донецкий национальный технический университет», факультет: «Компьютерных наук и технологий», специальность: «Программное обеспечение систем». </td>
-                    </tr>
-
-                    <tr>
-                        <th>Средний балл</th>
-                        <td>ХЗ</td>
-                    </tr>
-
-                    <tr>
-                        <th>Владение языками</th>
-                        <td>
-                            Русский - родной <br>
-                            Украинский - свободно<br>
-                            Английский - средний
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <th>Личные достижения</th>
-                        <td>Перс в ВоВ прокачан до 28 левела... Ну там еще 300 часов KF в Стиме</td>
-                    </tr>
-                    <tr>
-                        <th>Увлечения</th>
-                        <td>История, музыка, компьютерные игры</td>
-                    </tr>
-                    <tr>
-                        <th>Личные качества</th>
-                        <td>Пунктуальная ленивая задница</td>
-                    </tr>
-                    <tr>
-                        <th>Профессиональная специализация и владение компьютером</th>
-                        <td>Клацаю кнопки шустрее большинсва гуманоидов на этой планете</td>
-                    </tr>
-                    <tr>
-                        <th>Дополнительные курсы, стажировки, гранты</th>
-                        <td>Март 2014 - Программирование под мобильную платформу Android. ТехноПарк ДонНТУ</td>
-                    </tr>
-                    <tr>
-                        <th>Опыт работы</th>
-                        <td>2013, 2014 Летняя и преддипломная практика на предприятии ООО "В.И.П.Авто" г.Донецк</td>
-                    </tr>
-                    <tr>
-                        <th>Планы на будущее </th>
-                        <td>Перса докачать, проект закончить... курсач начать</td>
-                    </tr>
-                    <tr>
-                        <th>Контактная информация</th>
-                        <td>Нидам!</td>
-                    </tr>
-                </table>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="biography" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Биография</h2>
-                    <h3 class="section-subheading text-muted">Личностное становление</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3 class="section-subheading text-muted">Профессиональное становление</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="referat">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Реферат</h2>
-                    <h3 class="section-subheading text-muted"></h3>
-                </div>
-            </div>
-        </div>
-    </section>
+    <section id="resume"></section>
+    <section id="biography" class="bg-light-gray"></section>
+    <section id="referat"></section>
+    <section id="library" class="bg-light-gray"></section>
+    <section id="links"></section>
+    <section id="report" class="bg-light-gray"></section>
+    <section id="individual"></section>
 
 
-    <section id="library" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Библиотека</h2>
-                    <h3 class="section-subheading text-muted">Собственные публикации</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3 class="section-subheading text-muted">Тематические статьи</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3 class="section-subheading text-muted">Перевод с иностранного языка</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="links">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Библиотека</h2>
-                    <h3 class="section-subheading text-muted">Материалы магистров ДонНТУ</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3 class="section-subheading text-muted">Научные работы и статьи</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3 class="section-subheading text-muted">Техническая и спавочная литература</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3 class="section-subheading text-muted">Специализированые сайты и порталы</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="report" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Отчет о поиске</h2>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="individual">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Индивидуальный раздел</h2>
-                    <h3 class="section-subheading text-muted">От сюда хуню какую нибудь написать</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Лысакова Н.В. 2015</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        <li><a href="https://twitter.com/natashalysakova"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li><a href="https://www.facebook.com/hatassska"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li><a href="https://ua.linkedin.com/in/natashalysakova"><i class="fa fa-linkedin"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <footer id="footer">    </footer>
 
 
     <!-- jQuery -->
@@ -312,7 +91,14 @@
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
 
+    <script src="js/languageSwitch.js"></script>
+
     <!-- Custom Theme JavaScript -->
+
+    <script>
+        loadPage();
+    </script>
+
     <script src="js/agency.js"></script>
 
 </body>
