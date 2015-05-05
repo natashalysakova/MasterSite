@@ -13,19 +13,26 @@ $(function() {
     //    }, 1500, 'easeInOutExpo');
     //    event.preventDefault();
     //});
+    setTimeout(AddPageScroll,500);
+
+});
+
+function AddPageScroll()
+{
     var pagescrols = $('a.page-scroll');
     if(pagescrols.length > 0)
     {
         pagescrols.bind('click', function(event) {
-                var $anchor = $(this);
-                $('html, body').stop().animate({
-                    scrollTop: $($anchor.attr('href')).offset().top
-                }, 1500, 'easeInOutExpo');
-                event.preventDefault();
-    });
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top
+            }, 1500, 'easeInOutExpo');
+            event.preventDefault();
+        });
 
     }
-});
+}
+
 
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({

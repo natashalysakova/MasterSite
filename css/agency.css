@@ -933,6 +933,15 @@ li {
     background-color: rgba(255,255,255,0.7);
 }
 
+
+.navbar-shrink li {
+    background-color: rgba(255,255,255,0.0);
+}
+
+.navbar-shrink a:hover,{
+    color: #fed136;
+}
+
 #languages{
     margin-bottom: -46px;
 }
@@ -941,7 +950,7 @@ ul{
     list-style-type: none;
 }
 
-.fa {
+.fa.big-icons {
     font-size: 32px;
     color: black;
     padding-right: 10px;
