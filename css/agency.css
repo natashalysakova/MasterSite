@@ -1114,3 +1114,8 @@ ol {
     text-shadow: -1px 0px #b4b4b4, 1px 0px #b4b4b4, 0px 1px #b4b4b4, 0px -1px #b4b4b4;
 
 }
+
+.navbar-shrink .nav li a:hover, .navbar-shrink .nav li a:focus {
+    outline: 0px none;
+    color: #D6A234;
+}
