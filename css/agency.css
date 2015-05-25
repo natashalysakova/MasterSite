@@ -995,7 +995,10 @@ ol {
 }
 
 .black {
-    color: black;
+    color: white;
+    /*
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    */
 }
 
 .red {
@@ -1008,10 +1011,10 @@ ol {
 
 .green{
     color: green;
+    text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
 }
 
-.shadowed {
-    text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
+.big {
     font-size: 50px;
 }
 
@@ -1053,6 +1056,7 @@ ol {
 
 .embed-responsive{
     padding-top: 10%;
+
 }
 
 .video{
@@ -1075,15 +1079,17 @@ ol {
 
 .info {
     opacity: 0;
-    margin-top: -30%;
-    margin-bottom: 30%;
-    font-size: 3.5vh;
-    text-shadow: -3px 0px #000, 3px 0px #000, 0px 3px #000, 0px -3px #000;
+    font-size: 3.75vh;
+    text-shadow: -1px 0px #000, 1px 0px #000, 0px 1px #000, 0px -1px #000;
     -webkit-transition: opacity 0.75s ease-in 0s;
     -moz-transition: opacity 0.75s ease-in 0s;
     -ms-transition: opacity 0.75s ease-in 0s ;
     -o-transition: opacity 0.75s ease-in 0s ;
     transition:opacity 0.75s ease-in 0s ;
+    margin-top: -70%;
+    margin-bottom: 16%;
+    color: white;
+
 }
 
 .my-btn:hover .info {
@@ -1099,3 +1105,12 @@ ol {
     margin: 0px ;
 }
 
+
+.info .fa{
+    font-size: 10vh;
+    color: white;
+    opacity: 0.8;
+    margin-bottom: 10%;
+    text-shadow: -1px 0px #b4b4b4, 1px 0px #b4b4b4, 0px 1px #b4b4b4, 0px -1px #b4b4b4;
+
+}
