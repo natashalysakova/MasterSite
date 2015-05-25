@@ -190,6 +190,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-collapse {
     border-color: rgba(255, 255, 255, .02);
+    padding-top: 5px;
 }
 
 .navbar-default .navbar-toggle {
@@ -221,6 +222,7 @@ fieldset[disabled] .btn-xl.active {
     font-weight: 400;
     letter-spacing: 1px;
     color: #ffffff;
+
 }
 
 .navbar-default .nav li a:hover,
@@ -899,7 +901,7 @@ body {
     width: 35px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
     .navbar-default .logo {
         height: 50px;
         width: 35px;
@@ -911,19 +913,12 @@ body {
     }
 
     .navbar-right {
-        float: none !important;
         margin-right: -15px;
     }
 
 }
 
-@media (max-width: 1200px) {
 
-    .navbar-right {
-        float: none !important;
-        margin-right: -15px;
-    }
-}
 
 .nav > li > a {
     padding: 10px 7px;
@@ -1079,7 +1074,7 @@ ol {
 
 .info {
     opacity: 0;
-    font-size: 7vh;
+    font-size: 3vh;
     text-shadow: -1px 0px #000, 1px 0px #000, 0px 1px #000, 0px -1px #000;
     -webkit-transition: opacity 0.75s ease-in 0s;
     -moz-transition: opacity 0.75s ease-in 0s;
@@ -1110,7 +1105,7 @@ ol {
 
 
 .info .fa{
-    font-size: 20vh;
+    font-size: 10vh;
     color: white;
     opacity: 0.8;
     margin-top: 15%;
@@ -1122,3 +1117,25 @@ ol {
     outline: 0px none;
     color: #D6A234;
 }
+
+.padded {
+    padding-bottom: 20px;
+}
+
+ol li {
+    background: none;
+}
+
+@media (min-width: 0) and  (max-width: 890px) {
+    .navbar-default .nav li a {
+        font-size: 12px;
+        padding: 10px 3px;
+    }
+
+    .navbar-shrink .nav li a {
+
+        font-size: 50px;
+        padding: 10px 3px;
+    }
+}
+

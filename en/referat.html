@@ -1,8 +1,215 @@
-<div class="container">
-    <div class="row">
-        <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Реферат</h2>
-            <h3 class="text-muted"></h3>
-        </div>
-    </div>
-</div>
+<Div class="container">
+    <Div class="col-lg-12 text-center">
+        <H2 class="section-heading"> Abstract </h2>
+    </Div>
+    <Div class="col-lg-12">
+        <H3 class="text-muted"> Content </h3>
+        <Ol>
+            <Li><a href="#introduction"> Introduction </a></li>
+            <Li><a href="#targets"> Goals and Objectives </a></li>
+            <Li><a href="#actuality"> Topicality </a></li>
+            <Li><a href="#classification"> Classification of tasks multidimensional dynamic programming </a></li>
+            <Li><a href="#distribution"> resource allocation problems </a></li>
+            <Li><a href="#combination"> Combining dynamic programming method branch and bound </a>
+            </Li>
+            <Li><a href="#conclusion"> Conclusions </a></li>
+            <Li><a href="#sources"> Source List </a></li>
+        </Ol>
+        <H4 class="referat-title" id="introduction"> Introduction </h4>
+
+        <P>
+            The solution of problems of mathematical programming, which can be represented as a multi-stage
+            process is the subject of dynamic programming. With this dynamic
+            programming are a special mathematical method of optimization solutions specifically adapted to the
+            multistep process. A multi-step process is generally considered that develops over time and decompose into
+            a series of "steps" or "stages"
+        </P>
+
+        <P>
+            In this paper we will consider what a classical dynamic programming
+            multidimensional problem of dynamic programming and the relatively new method of combining methods
+            dynamic programming method of branches and borders.
+        </P>
+        <H4 class="referat-title" id="targets"> Goals and Objectives </h4>
+
+        <P> The aim of this work is the design and analysis of algorithms multidimensional dynamic programming. To
+            achieve this goal it is necessary to solve several problems: </p>
+
+        <Ul class="list">
+            <Li> analyze the existing problems;</li>
+            <Li> select the most interesting and relevant problems;</li>
+            <Li> develop algorithm of dynamic programming;</li>
+            <Li> evaluate the results of the following criteria: accuracy, complexity, time, memory.</Li>
+        </Ul>
+        <P> Each algorithm must be accompanied by a unit of instruction and theoretical reference for the application of
+            a method. </p>
+
+
+        <H4 class="referat-title" id="actuality"> Relevance of the topic </h4>
+
+        <P> The urgency of developing algorithms for solving multidimensional dynamic programming is a HYIP because in
+            fact, the whole history of mankind is connected with the solution of optimization problems. These tasks are
+            used both in the home and in the workplace. Under normal circumstances, a person can solve the optimization
+            problem at manage family budget, and in the production of this problem may be related to optimal
+            design of devices, tools, etc. Dynamic programming is fast and accurate way to solve these problems by
+            getting rid of repeating calculations. </P>
+
+        <P></p>
+
+        <P></p>
+
+        <H4 class="referat-title" id="classification"> Classification of tasks multidimensional dynamic
+            programming </h4>
+
+        <P> If the solution of the problem solution uses a single task the previous levels, the formulation of the
+            problem DP
+            It is a monadic
+            Otherwise it is called polyadic. The digraph without loops tops can be divided into levels, so that
+            the problem at this level depend only on the previous levels of subtasks. Depending on the communications
+            tasks for different levels, formulation of the problem can be attributed DP either serials or to nonserial
+            tasks. If the problem of the family at all levels depend only on the results of the tasks are to immediately
+            preceding level, such a task would be called DP serial task, otherwise it incoherence task called DP.
+            Using these two criteria for the classification problem can be attributed to the
+            DP
+            one of the following: </p>
+        <Ul class="list">
+            <Li> coherent-monadic</li>
+            <Li> coherent-polyadic</li>
+            <Li> incoherence-monadic</li>
+            <Li> incoherence-polyadic</li>
+        </Ul>
+
+
+        <H4 class="referat-title" id="distribution"> The problem of resource allocation </h4>
+
+        <P> The most interesting problems of resource allocation. In general terms, this problem can be described as
+            follows manner. There are a certain number of resources that can be understood by money, material resources
+            (raw materials, semi-finished products, human resources, various types of equipment, etc.). These resources
+            should be divided between the different objects of use over separate planning period or intervals between
+            objects and various intervals so as to obtain the maximum overall efficiency of return on assets
+            (maximization problem), or the total cost, cost, execution time given volume works (minimization problem),
+            and others. </p>
+
+        <P> Most of the problems of mathematical programming fits the general problem of optimal Resolution resource
+            allocation. But when considering the patterns making such tasks necessary to specify the common the shape of
+            the problem of resource allocation. Mathematical model of resource allocation problems depicted in the
+            formula 6. </P>
+        <Img src="img/2015-05-21_181211.png" class="img-responsive">
+
+        <P> A typical problem of resource allocation has the following wording: </p>
+
+        <P> There are some initial amount of resources ξ_0, to be distributed during the years between the n-
+            s-enterprises. Resources u_ki (k = 1,2, ..., n; i = 1, ..., s), isolated in the year k-i-to enterprise
+            bring a profit of f_ki (u_ki) and at the end of the year in the number of returning φ_ki (u_ki). The
+            following
+            distribution of profits can be used, and can not be used. We must find a way
+            resource allocation (the amount of resources allocated to each company in each plan year) to
+            the total income from the s-enterprises to n-years was the maximum. </p>
+
+        <P> Thus, as an indicator of the efficiency of resource allocation to the n-years received
+            the total income derived from s-enterprises (Formula 7). </P>
+        <Img src="img/2015-05-21_181211.png" class="img-responsive">
+
+        <P> In formulating the problem of optimal allocation of resources was assumed that the return on every step from
+            all
+            enterprises and maximum income Z_k * (ξ), starting with the k-th step to the end of the planning period,
+            depended only
+            the state of the system at the ξ k-th step, and from the management u_k = (u_k1, u_k2 ..., u_ks) n </p>
+
+        <P> Thus, it violated one of the conditions imposed to optimization problems, in order that they can be
+            describe a model of dynamic programming. To take into account the background of the process of resource
+            allocation,
+            You can increase the number of options at each step, to artificially include </p>
+
+
+        <H4 class="referat-title" id="combination"> The combination of dynamic programming method and branches
+            boundaries </h4>
+
+        <P> A large class of applications of optimization comes down to integer programming problems. To
+            these tasks are widely used combinatorial methods based on the ordered checking
+            the most promising options. Combinatorial methods for the solution can be divided into two groups: methods
+            dynamic programming and branch and bound method. </p>
+
+        <P> When solving multi-dimensional optimization problems proposed joint use of the branch-and-bound and
+            dynamic programming. At the first stage, the problem is solved by dynamic programming
+            separately for each of the restrictions. Sequences obtained from solutions functional
+            equation of dynamic programming, is then used to estimate the upper (lower) border
+            objective function. In the second stage the problem is solved by the branch and bound. With this method
+            determined by way of dividing the entire set of valid options for a subset, then there is a way
+            constructing a tree of options, and a method of estimating the upper limit of the target function. </p>
+
+        <P> Complex application of dynamic programming and branch and bound can improve
+            the effectiveness of solving discrete optimization problems. When solving large-scale problems with a view
+            reducing members optimal sequence use the additional clipping. </p>
+
+        <P> The search algorithm solutions combined branch and bound method shown below: </p>
+
+        <Img src="img/combination.png" class="img-responsive">
+
+        <P> The main directions of complex application of dynamic programming and branch and
+            boundaries is: </p>
+        <Ul class="list">
+            <Li> pruning unpromising options using the principle of optimality and estimation of boundaries by solutions
+                removing conditions integer;
+            </Li>
+            <Li> Use the optimal sequence of dynamic programming;</li>
+            <Li> pruning unpromising options using optimality principle and the decision on the assessment boundaries
+                optimal sequence.
+            </Li>
+        </Ul>
+
+        <P> It is expected that the combined application of dynamic programming and branch and bound allow
+            improve the efficiency of solving discrete optimization problems, it is the purpose of further
+            research. </p>
+
+        <H4 class="referat-title" id="conclusion"> Conclusion </h4>
+
+        <P> Dynamic programming is often used to solve optimization problems, because It allows
+            reduce the time and complexity of the solution at times. </p>
+
+        <P> Unfortunately, not always the solution obtained by the method of dynamic programming is
+            optimal, and therefore developed alternatives solutions tasks. One such option
+            there is a combination of solutions by dynamic programming method of branches and borders. Analysis and
+            implementation of this combined method is one of the main tasks of the author in writing within
+            thesis. </p>
+
+        <H4 class="referat-title" id="sources"> Source List </h4>
+        <Ol>
+
+
+            <Li> Dynamic Programming / Internet resource - Access: www / URL:
+                https://ru.wikipedia.org/wiki/Динамическое_программирование
+            </Li>
+            <Li> Dynamic Programming. Classical problems / Internet resource - Access: www / URL:
+                http://habrahabr.ru/post/113108/
+            </Li>
+            <Li> Kalikhman IL, MA Voitenko Dynamic programming examples and problems: Proc. allowance. -
+                M .: Executive. School, 1979. - 125 s.il.
+            </Li>
+            <Li> Complex application of dynamic programming and branch and bound method for solving
+                of tasks optimization MA Alpatov, RV Bubnov / Internet resource - Access: www / URL:
+                http://www.nit7.artdesign.ru/sections/b/73.html
+            </Li>
+            <Li> Maslova NA Methods of the theory of computation in solving the problems of process control / NA
+                Maslov // PIECE іntelekt.-2007.- № 3. - S. 165-171
+            </Li>
+            <Li> The method of successive optimization and discrete network of optimal allocation of resources.
+                Mikhalevich VS, Kuks AI - M .: Nauka. Home edition of Physical and mathematical literature, 1983. -
+                208c.
+            </Li>
+            <Li> Mikhalevich VS, Trubin VA, NC Shore Optimization problems of production and transport
+                Planning: The models, methods, algorithms. - M .: Nauka. Ch. Ed. Sci. Lighted., 1986. - 264 p.
+            </Li>
+            <Li> P. Bellman, S.Dreyfus Applications of dynamic programming. M., 1965, 460s with illustrations.
+            </Li>
+        </Ol>
+        <Hr>
+        <H5> Note: </h5>
+
+        <P> Abstract of a review and not a full version of the master's work. Is writing
+            the abstract of the master's work is not yet complete. Planned completion date: December
+            2015. Advanced-workers and a complete list of materials can be obtained from the author or
+            his head after that date. </p>
+
+    </Div>
+</Div>
