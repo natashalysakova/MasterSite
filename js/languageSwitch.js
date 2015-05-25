@@ -51,6 +51,8 @@ function loadPage(){
     CheckIfExist(path, "report");
     CheckIfExist(path, "individual");
     CheckIfExist(path, "footer");
+
+    setTimeout(AddPageScroll,500);
 }
 
 function CheckIfExist(pathOne, pathTwo)

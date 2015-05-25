@@ -13,7 +13,7 @@ $(function() {
     //    }, 1500, 'easeInOutExpo');
     //    event.preventDefault();
     //});
-    setTimeout(AddPageScroll,500);
+    
 
     // Highlight the top nav as scrolling occurs
     $('body').scrollspy({
