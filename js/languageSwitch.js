@@ -32,45 +32,46 @@ function loadPage(){
 
     switch (locId)
     {
-        case "0": path = 'ru/';
+        case "0":
+            path = '';
             break;
-        case "1": path = 'ua/';
+        case "1":
+            path = 'u';
             break;
-        case "2": path = 'en/';
+        case "2":
+            path = 'e';
             break;
-        default: path = 'ru/';
+        default:
+            path = '';
             break;
     }
 
-    CheckIfExist(path, "navbar");
-    CheckIfExist(path, "resume");
-    CheckIfExist(path, "biography");
-    CheckIfExist(path, "referat");
-    CheckIfExist(path, "library");
-    CheckIfExist(path, "links");
-    CheckIfExist(path, "report");
-    CheckIfExist(path, "individual");
-    CheckIfExist(path, "footer");
+    CheckIfExist(path, "biography", "bio");
+    CheckIfExist(path, "referat", 'diss');
+    CheckIfExist(path, "library", 'library');
+    CheckIfExist(path, "links", 'links');
+    CheckIfExist(path, "report", 'report');
+    CheckIfExist(path, "individual", 'ind');
 
     setTimeout(AddPageScroll,500);
 }
 
-function CheckIfExist(pathOne, pathTwo)
+function CheckIfExist(prefix, selectionName, folder)
 {
-    var fullPath = pathOne + pathTwo + ".html";
+    var fullPath = folder + '/index' + prefix + ".html";
 
     $.ajax({
         url: fullPath,
         type:'HEAD',
         error: function()
         {
-            $( "#" + pathTwo).hide();
-            console.log(pathTwo + " not exist")
+            $("#" + selectionName).hide();
+            console.log(fullPath + " not exist")
         },
         success: function()
         {
-            $( "#" + pathTwo ).load( fullPath );
-            console.log(pathTwo + " exist")
+            $("#" + selectionName).load(fullPath);
+            console.log(fullPath + " exist")
         }
     });
 }

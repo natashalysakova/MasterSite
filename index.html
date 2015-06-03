@@ -37,7 +37,34 @@
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container" id="navbar">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="page-scroll" href="#page-top"><img class="logo navbar-brand" src="img/donntu.png"/></a>
+            </div>
 
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li><a href="#resume" class="page-scroll">Резюме</a></li>
+                    <li><a href="#biography" class="page-scroll"> Биография</a></li>
+                    <li><a href="#referat" class="page-scroll"> Реферат</a></li>
+                    <li><a href="#library" class="page-scroll"> Библиотека</a></li>
+                    <li><a href="#links" class="page-scroll"> Ссылки</a></li>
+                    <li><a href="#report" class="page-scroll"> Отчет о поиске</a></li>
+                    <li><a href="#individual" class="page-scroll"> Индивидуальный раздел</a></li>
+
+                </ul>
+            </div>
         </div>
         <!-- /.container-fluid -->
     </nav>
@@ -58,14 +85,140 @@
             </div>
         </div>
         <div id="languages">
-            <div class="btn" onclick="switchLanguage('ru');"><img src="img/blank.gif" class="flag flag-ru" alt="Русский" /></div>
-            <div class="btn" onclick="switchLanguage('ua');"><img src="img/blank.gif" class="flag flag-ua" alt="Українська" /></div>
-            <div class="btn" onclick="switchLanguage('en');"><img src="img/blank.gif" class="flag flag-us" alt="English" /></div>
+            <div class="btn" onclick="switchLanguage('ru'); window.location.href = 'index.html';"><img
+                    src="img/blank.gif" class="flag flag-ru" alt="Русский"/></div>
+            <div class="btn" onclick="switchLanguage('ua'); window.location.href = 'indexu.html';"><img
+                    src="img/blank.gif" class="flag flag-ua" alt="Українська"/></div>
+            <div class="btn" onclick="switchLanguage('en');window.location.href = 'indexe.html';"><img
+                    src="img/blank.gif" class="flag flag-us" alt="English"/></div>
         </div>
     </header>
 
     <!-- Services Section -->
-    <section id="resume"></section>
+    <section id="resume">
+        <div class="container">
+            <div class="row center-block text-center">
+                <p></p>
+
+                <h1>Лысакова Наталья Владимировна</h1>
+
+                <p></p>
+            </div>
+            <div class="row col-md-8 col-md-offset-2 text-center  text-muted">
+                <p>Факультет компьютерных наук и технологий<br>
+                    Кафедра прикладной математики и информатики<br>
+                    Специальность "Программное обеспечение систем"</p>
+            </div>
+            <div class="row col-md-8 col-md-offset-2 text-center">
+                <h3>Разработка и анализ алгоритмов многомерного динамического программирования</h3>
+                Научный руководитель доц. Маслова Наталья Александровна
+
+            </div>
+        </div>
+        <br>
+
+        <div class="container">
+            <div class="col-md-8 col-md-offset-2">
+                <table class="table table-responsive">
+                    <tbody>
+                    <tr>
+                        <th class="col-md-4">ФИО</th>
+                        <td>Лысакова Наталья Владимировна</td>
+                    </tr>
+                    <tr>
+                        <th>Дата рождения</th>
+                        <td>22 августа 1992г.</td>
+                    </tr>
+                    <tr>
+                        <th>Место рождения</th>
+                        <td>г. Донецк</td>
+                    </tr>
+                    <tr>
+                        <th>Школа</th>
+                        <td>Общеобразовательная школа №98 г. Донецк</td>
+                    </tr>
+                    <tr>
+                        <th>ВУЗ</th>
+                        <td><strong>Бакалаврат:</strong> <br>
+                            2010–2011 гг. — Государственный университет информатики и искусственного интеллекта,
+                            факультет: «Компьютерных информационных технологий», специальность: «Программное обеспечение
+                            интеллектуальных систем».<br>
+                            2011–2014 гг. — ГВУЗ «Донецкий национальный технический университет», факультет:
+                            «Компьютерных наук и технологий», специальность: «Программное обеспечение систем».<br>
+
+                            <strong>Магистратура:</strong><br>
+                            2014–2016 гг. — ГВУЗ «Донецкий национальный технический университет», факультет:
+                            «Компьютерных наук и технологий», специальность: «Программное обеспечение систем».
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Средний балл</th>
+                        <td>4,7</td>
+                    </tr>
+
+                    <tr>
+                        <th>Владение языками</th>
+                        <td>
+                            Русский - родной <br>
+                            Украинский - свободно<br>
+                            Английский - средний<br>
+                            Польский - базовый
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Увлечения</th>
+                        <td>Немецкая тяжелая музыка, компьютерные игры, участие в программах тестирования ПО</td>
+                    </tr>
+                    <tr>
+                        <th>Профессиональная специализация и владение компьютером</th>
+                        <td>
+                            <b>Операционные системы:</b><br> Windows XP/Vista/7/8/10<br>
+                            <b>Языки программирования и разметки:</b><br> C#, C/C++, Java, JavaScript, HTML, CSS<br>
+                            <b>Технологии и фреймворки:</b><br> ASP.Net, MVC, Entity Framework, JQuery, Twitter
+                            Bootstrap<br>
+                            <b>Среды разработки:</b><br> Microsoft Visual Studio, Intellij IDEA, WebStorm<br>
+                            <b>Базы данных:</b><br> Microsoft SQL Server, Oracle Database, Microsoft Access, MySQL<br>
+                            <b>Системы контроля версий:</b><br> Git, Mercurial<br>
+                            <b>Средства моделирования:</b><br> MS Visio, ERWin, Rational Rose<br>
+                            <b>Системы 3D моделирования:</b><br> 3d Studio Max, Maya, SketchUp<br>
+                            <b>Знания:</b><br> ООП, Unit Testing, Scrum<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Дополнительные курсы, стажировки, гранты</th>
+                        <td>Март 2014 - Программирование под мобильную платформу Android. ТехноПарк ДонНТУ</td>
+                    </tr>
+                    <tr>
+                        <th>Опыт работы</th>
+                        <td>
+                            <b>2013, 2014</b> Летняя и преддипломная практика на предприятии ООО "В.И.П.Авто"
+                            г.Донецк<br>
+                            <b>Март 2015</b> Freelance-проект для благотворитлеьной органицзации <a
+                                href="http://dniprofuture.dp.ua">"Майбутнє Дніпра"</a>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <th>Контактная информация</th>
+                        <td>
+                            <div class="col-md-12">
+                                <a href="mailto: natashalysakova@gmail.com"><i class="fa fa-envelope big-icons"></i></a>
+                                <a href="tel:+380508104250"><i class="fa fa-phone big-icons"></i></a>
+                                <a href="https://twitter.com/natashalysakova"><i
+                                        class="fa fa-twitter big-icons"></i></a>
+                                <a href="https://www.facebook.com/hatassska"><i
+                                        class="fa fa-facebook big-icons"></i></a>
+                                <a href="https://ua.linkedin.com/in/natashalysakova"><i
+                                        class="fa fa-linkedin big-icons"></i></a>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
     <section id="biography" class="bg-light-gray"></section>
     <section id="referat"></section>
     <section id="library" class="bg-light-gray"></section>
@@ -74,7 +227,27 @@
     <section id="individual"></section>
 
 
-    <footer id="footer">    </footer>
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Портал Магистров ДонНТУ &copy; Лысакова Н.В. 2015</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="https://twitter.com/natashalysakova"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="https://www.facebook.com/hatassska"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="https://ua.linkedin.com/in/natashalysakova"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li><a href="http://vk.com/hatassska"><i class="fa fa-vk"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <!-- jQuery -->
